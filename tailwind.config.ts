@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        accent: "text-rose-400",
+        default: "text-zinc-300",
+        point: "text-yellow-300",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
