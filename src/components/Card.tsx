@@ -1,3 +1,4 @@
+import { BASE_IMAGE_URL } from "@/constants/api";
 import { Champion } from "@/types/champions";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export default function Card({ data }: CartProps) {
   return (
     <section id="card">
       <Image
-        src={`https://ddragon.leagueoflegends.com/cdn/15.5.1/img/champion/${data.image}`}
+        src={`${BASE_IMAGE_URL}/champion/${data.image}`}
         alt={data.name}
         width={100}
         height={100}
