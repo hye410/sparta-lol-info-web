@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import colors from "tailwindcss/colors";
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "text-rose-400",
-        default: "text-zinc-300",
-        point: "text-yellow-300",
+        accent: colors.rose[400],
+        default: colors.zinc[300],
+        point: colors.yellow[300],
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
