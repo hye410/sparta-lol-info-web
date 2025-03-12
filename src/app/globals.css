@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title {
+  @apply font-extrabold text-2xl mb-5 text-accent;
+}
+
+.subTitle {
+  @apply text-lg text-accent mb-3 font-semibold;
+}
+
+#card {
+  @apply flex flex-col items-center p-5 bg-black rounded-lg shadow-sm shadow-stone-600 cursor-pointer;
+}
