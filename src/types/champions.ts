@@ -30,7 +30,6 @@ export type DetailChampion = OriginChampion & {
     image: ChampionImage;
   }>;
 };
-
 export type ChampionSpell = {
   name: string;
   description: string;
