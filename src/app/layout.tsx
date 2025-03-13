@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-slate-600 min-h-screen flex flex-col">
+      <body className="bg-zinc-950 min-h-screen flex flex-col">
         <header>
           <nav className="p-7">
             <ul className="flex justify-between w-[85vw] gap-2 mx-auto">

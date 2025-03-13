@@ -11,5 +11,6 @@
 }
 
 #card {
-  @apply flex flex-col items-center p-5 bg-black rounded-lg shadow-sm shadow-stone-600 cursor-pointer;
+  @apply flex flex-col items-center p-5 border border-gray-400 rounded-lg shadow-sm shadow-gray-500 cursor-pointer
+  transform transition duration-300 hover:scale-110;
 }

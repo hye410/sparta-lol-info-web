@@ -1,4 +1,4 @@
-import NavBox from "@/components/NavBox";
+import NavBox from "@/components/home/NavBox";
 import { HOME_NAV_ITEMS } from "@/data/nav-items";
 
 export default function Home() {
