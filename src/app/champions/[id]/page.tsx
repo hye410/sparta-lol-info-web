@@ -16,7 +16,7 @@ export default async function DetailChampionPage({
   const { name, title, lore, spells, image } = champion;
 
   return (
-    <article className="p-10">
+    <article className="p-20">
       <h1 className="title !text-point">{name}</h1>
       <h2 className="subTitle">{title}</h2>
       <Image

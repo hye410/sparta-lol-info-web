@@ -1,3 +1,5 @@
+import { Image } from "./common";
+
 export type ChampionsResponse = {
   data: Record<string, OriginChampion>;
 };
@@ -8,17 +10,7 @@ type BasicChampion = {
   title: string;
 };
 
-export type OriginChampion = BasicChampion & { image: ChampionImage };
-
-export type ChampionImage = {
-  full: string;
-  sprite: string;
-  group: string;
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-};
+export type OriginChampion = BasicChampion & { image: Image };
 
 export type Champion = BasicChampion & { image: string };
 
@@ -27,7 +19,7 @@ export type DetailChampion = OriginChampion & {
   spells: Array<{
     name: string;
     description: string;
-    image: ChampionImage;
+    image: Image;
   }>;
 };
 export type ChampionSpell = {
