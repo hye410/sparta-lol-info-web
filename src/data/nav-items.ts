@@ -28,12 +28,12 @@ export const HOME_NAV_ITEMS = [
   },
   {
     title: "금주 로테이션 확인",
-    path: ITEMS,
+    path: ROTATION,
     img: "/items.webp",
   },
   {
     title: "아이템 목록 보기",
-    path: ROTATION,
+    path: ITEMS,
     img: "/rotation.webp",
   },
 ];
