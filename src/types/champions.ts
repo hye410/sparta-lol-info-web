@@ -6,6 +6,7 @@ export type ChampionsResponse = {
 
 type BasicChampion = {
   id: string;
+  key: string;
   name: string;
   title: string;
 };

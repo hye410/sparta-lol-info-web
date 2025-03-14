@@ -17,10 +17,11 @@ export const getChampionsList = async () => {
   const { data }: ChampionsResponse = await res.json();
   const values: OriginChampion[] = Object.values(data);
   const filteredChampions: Champion[] = values.map(
-    ({ id, name, title, image }) => {
+    ({ id, key, name, title, image }) => {
       const full = image.full;
       return {
         id,
+        key,
         name,
         title,
         image: full,

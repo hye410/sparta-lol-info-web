@@ -1,6 +1,6 @@
 import SpellCards from "@/components/champions/SpellCards";
 import { BASE_IMAGE_URL } from "@/constants/api";
-import { getDetailChampion } from "@/utils/serverApi";
+import { getDetailChampion } from "@/utils/api/serverApi";
 import Image from "next/image";
 
 type DetailChampionProps = {
@@ -16,7 +16,7 @@ export default async function DetailChampionPage({
   const { name, title, lore, spells, image } = champion;
 
   return (
-    <article className="p-20">
+    <article className="pageWrapper">
       <h1 className="title !text-point">{name}</h1>
       <h2 className="subTitle">{title}</h2>
       <Image
