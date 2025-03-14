@@ -1,5 +1,5 @@
 import Card from "@/components/common/Card";
-import { getChampionsList } from "@/utils/api/serverApi";
+import { getChampionsList } from "@/utils/api/champions-api";
 
 export default async function Champions() {
   const { champions } = await getChampionsList();

@@ -1,5 +1,5 @@
 import ItemCard from "@/components/items/ItemCard";
-import { getItemsList } from "@/utils/api/itemsApi";
+import { getItemsList } from "@/utils/api/items-api";
 export default async function Items() {
   const { items } = await getItemsList();
   return (
