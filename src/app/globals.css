@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .pageWrapper {
-  @apply p-20;
+  @apply p-10 lg:p-20 max-w-[90vw] mx-auto;
 }
 
 .title {
-  @apply font-extrabold text-2xl mb-5 text-accent;
+  @apply font-extrabold  text-lg sm:text-xl md:text-2xl mb-5 text-accent;
 }
 
 .subTitle {
-  @apply text-lg text-accent mb-3 font-semibold;
+  @apply sm:text-lg text-accent mb-3 font-semibold;
 }
 
 .cardWrapper {
-  @apply grid grid-cols-4 gap-4;
+  @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5;
 }
 #card {
-  @apply flex flex-col items-center p-5 border border-gray-400 rounded-lg shadow-sm shadow-gray-500 cursor-pointer
-  transform transition duration-300 hover:scale-110;
+  @apply flex flex-col items-center justify-around p-5 border border-gray-400 rounded-lg shadow-sm shadow-gray-500 cursor-pointer
+  transform transition duration-300 hover:scale-110 h-60 overflow-scroll;
 }

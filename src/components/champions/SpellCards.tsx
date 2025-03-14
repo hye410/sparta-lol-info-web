@@ -8,7 +8,10 @@ type SpellCardsProps = {
 
 export default function SpellCards({ spell }: SpellCardsProps) {
   return (
-    <dl key={spell.name} className="border p-5 rounded-lg">
+    <dl
+      key={spell.name}
+      className="border p-5 rounded-lg h-[250px] overflow-scroll max-w-[350px]"
+    >
       <dt className="text-accent font-semibold mb-2">{spell.name}</dt>
       <dd className="mb-3">
         <Image

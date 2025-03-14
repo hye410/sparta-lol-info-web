@@ -23,7 +23,7 @@ export default function RootLayout({
               {NAV_ITEMS.map((nav) => (
                 <li
                   key={`navigate_to_${nav.path}`}
-                  className="text-lg text-zinc-50 hover:font-bold"
+                  className="sm:text-lg text-zinc-50 hover:font-bold"
                 >
                   <Link href={nav.path}>{nav.title}</Link>
                 </li>
