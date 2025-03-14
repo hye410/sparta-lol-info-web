@@ -1,11 +1,12 @@
 "use client";
-import Card from "@/components/Card";
+import Card from "@/components/common/Card";
 import { Champion } from "@/types/champions";
 import { useRotationQuery } from "@/utils/hooks/useRotationQuery";
 
 export default function Rotation() {
-  const { data: champions } = useRotationQuery();
-
+  const { data: champions, isLoading, isFetching } = useRotationQuery();
+  if (isLoading || isFetching)
+    return <div className="text-white">로딩 중..</div>;
   return (
     <article className="pageWrapper">
       <h1 className="title">

@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import Card from "@/components/common/Card";
 import { getChampionsList } from "@/utils/api/serverApi";
 
 export default async function Champions() {
