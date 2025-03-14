@@ -1,5 +1,6 @@
 "use client";
 import Card from "@/components/Card";
+import { Champion } from "@/types/champions";
 import { useRotationQuery } from "@/utils/hooks/useRotationQuery";
 
 export default function Rotation() {
@@ -11,7 +12,7 @@ export default function Rotation() {
         챔피언 로테이션 (이번주 무료로 플레이 할 수 있어요!)
       </h1>
       <div className="cardWrapper">
-        {champions?.map((champion) => (
+        {champions?.map((champion: Champion) => (
           <Card key={`rotation_champion_${champion.id}`} data={champion} />
         ))}
       </div>
