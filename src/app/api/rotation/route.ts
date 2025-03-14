@@ -1,5 +1,5 @@
 import { ROTATION_BASE_URL } from "@/constants/api";
-import { getChampionsList } from "@/utils/api/serverApi";
+import { getChampionsList } from "@/utils/api/champions-api";
 import { NextResponse } from "next/server";
 
 export async function GET() {

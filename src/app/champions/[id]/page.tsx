@@ -1,6 +1,6 @@
 import SpellCards from "@/components/champions/SpellCards";
 import { BASE_IMAGE_URL } from "@/constants/api";
-import { getDetailChampion } from "@/utils/api/serverApi";
+import { getDetailChampion } from "@/utils/api/detail-champion-api";
 import Image from "next/image";
 
 type DetailChampionProps = {
