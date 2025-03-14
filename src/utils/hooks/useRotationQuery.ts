@@ -5,6 +5,6 @@ export const useRotationQuery = () => {
   return useQuery({
     queryKey: ["rotation"],
     queryFn: async () => await getRotationList(),
-    staleTime: 86400,
+    staleTime: 1000 * 60 * 10,
   });
 };
