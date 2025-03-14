@@ -7,14 +7,14 @@ type ItemCardProps = {
 };
 export default function ItemCard({ item }: ItemCardProps) {
   return (
-    <section className="border p-5 flex flex-col items-center justify-evenly h-[250px] overflow-scroll">
+    <section className="border p-3 lg:p-5 flex flex-col items-center justify-around h-[200px] md:h-[250px] overflow-scroll">
       <Image
         src={`${BASE_IMAGE_URL}/item/${item.image}`}
         alt={item.name}
         width={60}
         height={60}
       />
-      <h3 className="subTitle">{item.name}</h3>
+      <h3 className="subTitle !mb-0">{item.name}</h3>
       <p className="text-default text-justify">{item.plaintext}</p>
     </section>
   );

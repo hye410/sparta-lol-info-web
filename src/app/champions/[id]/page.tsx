@@ -28,7 +28,7 @@ export default async function DetailChampionPage({
       <p className="my-8 text-default text-sm">{lore}</p>
       <section className="my-5 ">
         <h3 className="subTitle">{name}의 스킬</h3>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid  gap-3 grid-cols-1 sm:gird-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {spells.map((spell) => (
             <SpellCards key={`detail_${name}`} spell={spell} />
           ))}
