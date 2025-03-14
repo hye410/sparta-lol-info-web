@@ -4,7 +4,7 @@ import { getRotationList } from "@/utils/api/rotationApi";
 export const useRotationQuery = () => {
   return useQuery({
     queryKey: ["rotation"],
-    queryFn: getRotationList,
+    queryFn: async () => await getRotationList(),
     staleTime: 86400,
   });
 };
