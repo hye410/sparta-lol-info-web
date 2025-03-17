@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
 import { getRotationList } from "@/utils/api/rotation-api";
+import { useQuery } from "@tanstack/react-query";
 
 export const useRotationQuery = () => {
   return useQuery({
