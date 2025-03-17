@@ -1,16 +1,20 @@
 "use client";
-import { useEffect, useState } from "react";
+import { SCREEN_MODE } from "@/constants/screenMode";
+import useScreenModeStore from "@/store/screenModeStore";
+import { useEffect } from "react";
+
+const { DARK, LIGHT } = SCREEN_MODE;
+
 export default function ThemeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const { mode, changeMode } = useScreenModeStore();
 
   useEffect(() => {
-    console.log(isDarkMode);
-    if (isDarkMode) document.documentElement.classList.toggle("dark", true);
-    else document.documentElement.classList.toggle("dark", false);
-  }, [isDarkMode]);
+    if (mode === DARK) document.documentElement.classList.toggle(DARK, true);
+    if (mode === LIGHT) document.documentElement.classList.toggle(DARK, false);
+  }, [mode]);
 
   const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
+    changeMode();
   };
 
   return (
@@ -18,7 +22,7 @@ export default function ThemeToggle() {
       onClick={toggleMode}
       className="text-default dark:text-white p-2  absolute right-10 text-3xl"
     >
-      {isDarkMode ? "☀️" : "🌙"}
+      {mode === DARK ? "☀️" : "🌙"}
     </button>
   );
 }
