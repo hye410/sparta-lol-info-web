@@ -17,7 +17,7 @@ export default async function DetailChampionPage({
 
   return (
     <article className="pageWrapper">
-      <h1 className="title !text-point">{name}</h1>
+      <h1 className="title !text-point dark:!text-darkPoint">{name}</h1>
       <h2 className="subTitle">{title}</h2>
       <Image
         src={`${BASE_IMAGE_URL}/champion/${image}`}
@@ -25,7 +25,7 @@ export default async function DetailChampionPage({
         width={150}
         height={150}
       />
-      <p className="my-8 text-default text-sm">{lore}</p>
+      <p className="my-8 text-default dark:text-darkDefault text-sm">{lore}</p>
       <section className="my-5 ">
         <h3 className="subTitle">{name}의 스킬</h3>
         <div className="grid  gap-3 grid-cols-1 sm:gird-cols-2 md:grid-cols-3 lg:grid-cols-4">

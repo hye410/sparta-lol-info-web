@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,8 +11,10 @@ const config: Config = {
     extend: {
       colors: {
         accent: colors.rose[400],
-        default: colors.zinc[300],
-        point: colors.yellow[300],
+        darkDefault: colors.zinc[300],
+        darkPoint: colors.yellow[300],
+        default: colors.stone[800],
+        point: colors.orange[500],
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

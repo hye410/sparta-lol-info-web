@@ -19,7 +19,7 @@ export default function Card({ data }: CartProps) {
           height={100}
         />
         <h3 className="subTitle mt-4">{data.name}</h3>
-        <p className="text-default">{data.title}</p>
+        <p className="text-default dark:text-darkDefault">{data.title}</p>
       </section>
     </Link>
   );

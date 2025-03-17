@@ -10,7 +10,7 @@ export default function SpellCards({ spell }: SpellCardsProps) {
   return (
     <dl
       key={spell.name}
-      className="border p-5 rounded-lg h-[250px] overflow-scroll max-w-[350px]"
+      className="border border-gray-300 shadow-md p-5 rounded-lg h-[250px] overflow-scroll max-w-[350px]"
     >
       <dt className="text-accent font-semibold mb-2">{spell.name}</dt>
       <dd className="mb-3">
@@ -21,7 +21,9 @@ export default function SpellCards({ spell }: SpellCardsProps) {
           height={50}
         />
       </dd>
-      <dd className="text-sm text-justify text-default">{spell.description}</dd>
+      <dd className="text-sm text-justify text-default dark:text-darkDefault ">
+        {spell.description}
+      </dd>
     </dl>
   );
 }
