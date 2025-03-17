@@ -1,6 +1,6 @@
 "use client";
 import Loading from "@/components/common/Loading";
 
-export default function DetailChampionLoading() {
+export default function GlobalLoading() {
   return <Loading />;
 }
