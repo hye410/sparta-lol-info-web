@@ -10,6 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        darkBg: colors.zinc[950],
+        lightBg: colors.neutral[200],
         accent: colors.rose[400],
         darkDefault: colors.zinc[300],
         darkPoint: colors.yellow[300],

@@ -19,6 +19,6 @@
 }
 
 #card {
-  @apply flex flex-col items-center justify-around p-5 border border-gray-100 dark:border-gray-400 rounded-lg shadow-sm shadow-gray-500 cursor-pointer
+  @apply flex flex-col items-center justify-around bg-lightBg dark:bg-darkBg p-5 border border-gray-100 dark:border-gray-400 rounded-lg shadow-sm shadow-gray-500 cursor-pointer
   transform transition duration-300 hover:scale-110 h-60 overflow-scroll;
 }
