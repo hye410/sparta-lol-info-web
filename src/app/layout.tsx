@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "@/provider/RQProvider";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/data/nav-items";
+import ThemeToggle from "@/components/common/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "LoL 인포 (LOL Info)",
@@ -16,25 +17,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-zinc-950 min-h-screen flex flex-col">
+      <body className="bg-zinc-100 dark:bg-zinc-950 min-h-screen flex flex-col">
         <header>
           <nav className="p-7">
             <ul className="flex justify-between w-[85vw] gap-2 mx-auto">
               {NAV_ITEMS.map((nav) => (
                 <li
                   key={`navigate_to_${nav.path}`}
-                  className="sm:text-lg text-zinc-50 hover:font-bold"
+                  className="sm:text-lg text-stone-800 dark:text-zinc-50 hover:font-bold"
                 >
                   <Link href={nav.path}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
           </nav>
+          <div className="relative">
+            <ThemeToggle />
+          </div>
         </header>
         <main className="flex-grow">
           <Providers>{children}</Providers>
         </main>
-        <footer className="p-6 text-sm text-stone-500 text-justify">
+        <footer className="p-6 text-sm text-stone-300 dark:text-stone-500 text-justify">
           LoL 인포 (LOL Info) is not endorsed by Riot Games and does not reflect
           the views or opinions of Riot Games or anyone officially involved in
           producing or managing Riot Games properties. Riot Games and all

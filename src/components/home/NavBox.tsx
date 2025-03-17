@@ -12,7 +12,9 @@ export default function NavBox({ nav }: NavBoxProps) {
       <Link href={nav.path}>
         <Image src={nav.img} width={400} height={300} alt={nav.title} />
       </Link>
-      <p className="text-center mt-2 text-point">{nav.title}</p>
+      <p className="text-center mt-2 text-point dark:text-darkPoint">
+        {nav.title}
+      </p>
     </div>
   );
 }
