@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 LoL Info Web
 
-## Getting Started
+LoL Info Web은 리그 오브 레전드(LoL)의 챔피언 및 아이템 정보를 제공하는 간단한 웹 애플리케이션입니다.
 
-First, run the development server:
+## 🚀 기술 스택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🖥 Framework: Next.js
+
+🎨 Styling: Tailwind CSS
+
+📦 State Management: Zustand
+
+⚡ Data Fetching & Caching: TanStack Query
+
+💡 Language: TypeScript
+
+## 📂 프로젝트 구조
+
+lol-info-web<br />
+├─ .eslintrc.json<br />
+├─ LICENSE<br />
+├─ README.md<br />
+├─ next.config.mjs<br />
+├─ package.json<br />
+├─ pnpm-lock.yaml<br />
+├─ postcss.config.mjs<br />
+├─ public<br />
+│ ├─ champions.webp<br />
+│ ├─ items.webp<br />
+│ └─ rotation.webp<br />
+├─ src<br />
+│ ├─ app<br />
+│ │ ├─ api (API 라우트)<br />
+│ │ ├─ champions (챔피언 목록 및 상세 페이지)<br />
+│ │ ├─ error.tsx (공통 에러 페이지)<br />
+│ │ ├─ items (아이템 목록 페이지)<br />
+│ │ ├─ layout.tsx (기본 레이아웃)<br />
+│ │ ├─ loading.tsx (공통 로딩 UI)<br />
+│ │ ├─ rotation (로테이션 챔피언 페이지)<br />
+│ ├─ components (UI 컴포넌트 모음)<br />
+│ ├─ constants (상수 관리)<br />
+│ ├─ data (데이터 관리)<br />
+│ ├─ provider (Tanstack Query Provider)<br />
+│ ├─ store (Zustand 상태 관리)<br />
+│ ├─ types (TypeScript 타입 정의)<br />
+│ ├─ utils (API 요청 및 커스텀 훅)<br />
+├─ tailwind.config.ts<br />
+└─ tsconfig.json
+
+## 📦 설치 및 실행
+
+1️⃣ 레포지토리 클론 <br />
+
+```
+git clone https://github.com/hye410/sparta-lol-info-web.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2️⃣ 패키지 설치<br />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3️⃣ 개발 서버 실행 <br />
 
-## Learn More
+```
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4️⃣ 빌드 및 배포 <br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+pnpm build && pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 주요 기능
 
-## Deploy on Vercel
+✔️ 챔피언 목록 및 개별 챔피언 상세 정보 제공<br />
+✔️ 아이템 목록<br />
+✔️ 주간 로테이션 챔피언 정보 제공<br />
+✔️ 다크 모드 지원 <br />
+✔️ 태블릿, 모바일 지원
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📜 라이선스
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+이 프로젝트는 MIT 라이선스를 따릅니다.
