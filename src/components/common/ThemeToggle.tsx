@@ -13,13 +13,9 @@ export default function ThemeToggle() {
     if (mode === LIGHT) document.documentElement.classList.toggle(DARK, false);
   }, [mode]);
 
-  const toggleMode = () => {
-    changeMode();
-  };
-
   return (
     <button
-      onClick={toggleMode}
+      onClick={changeMode}
       className="text-default dark:text-white p-2  absolute right-10 text-3xl"
     >
       {mode === DARK ? "☀️" : "🌙"}
