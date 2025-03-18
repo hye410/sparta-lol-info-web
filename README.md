@@ -16,6 +16,8 @@ LoL Info Web은 리그 오브 레전드(LoL)의 챔피언 및 아이템 정보�
 
 ## 📂 프로젝트 구조
 
+<details>
+<summary>펼쳐보기</summary>
 lol-info-web<br />
 ├─ .eslintrc.json<br />
 ├─ LICENSE<br />
@@ -46,6 +48,7 @@ lol-info-web<br />
 │ ├─ utils (API 요청 및 커스텀 훅)<br />
 ├─ tailwind.config.ts<br />
 └─ tsconfig.json
+</details>
 
 ## 📦 설치 및 실행
 
