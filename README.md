@@ -1,6 +1,7 @@
 # 🎮 LoL Info Web
 
-LoL Info Web은 리그 오브 레전드(LoL)의 챔피언 및 아이템 정보를 제공하는 간단한 웹 애플리케이션입니다.
+LoL Info Web은 리그 오브 레전드(LoL)의 챔피언 및 아이템 정보를 제공하는 간단한 웹 애플리케이션입니다.<br />
+<a href="https://sparta-lol-info-web.vercel.app/">보러가기</a>
 
 ## 🚀 기술 스택
 
