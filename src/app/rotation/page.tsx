@@ -12,8 +12,9 @@ export default function Rotation() {
     isError,
     error,
   } = useRotationQuery();
+
   if (isLoading || isFetching) return <Loading />;
-  if (isError) return <Error message={error.message} />;
+  if (isError) return <Error message={error?.message} />;
 
   return (
     <article className="pageWrapper">
